@@ -7,23 +7,33 @@
 .. image:: https://codecov.io/gh/portugueslab/theknights/branch/master/graph/badge.svg
         :target: https://codecov.io/gh/portugueslab/theknights
 
+.. image:: https://upload.wikimedia.org/wikipedia/en/e/eb/Knightni.jpg?download
 
 
+The Kinghts (who say NI)
+========================
 
-Who say NI
+This package fakes parts of the `nidaqmx`_ package for controlling NI boards. It should be used like:
+
+.. code-block:: python
+
+    import logging
+
+    try:
+        import nidaqmx
+    except ImportError:
+        import theknights as nidaqmx
+    
+to enable testing and continuous integration on machines which do not have NI boards attached.
 
 This package has been developed in the `Portugues lab`_. Documentation can be found `here`_.
 
-Features
---------
-
-* TODO
 
 Credits
 -------
 
 The package was created with Cookiecutter_ and this_ template.
-
+.. _`nidaqmx`: https://nidaqmx-python.readthedocs.io/en/latest/
 .. _`Portugues lab`: http://www.portugueslab.com
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _this: https://github.com/audreyr/cookiecutter-pypackage

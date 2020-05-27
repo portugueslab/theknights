@@ -23,16 +23,18 @@ This package fakes parts of the `nidaqmx`_ package for controlling NI boards. It
         import nidaqmx
     except ImportError:
         import theknights as nidaqmx
-    
-to enable testing and continuous integration on machines which do not have NI boards attached.
 
-This package has been developed in the `Portugues lab`_. Documentation can be found `here`_.
+
+The main purpose is to enable testing, development and continuous integration on machines which do not have NI boards attached.
+This package has been developed in the `Portugues lab`_. Documentation can be found `here`_ .
+
 
 
 Credits
 -------
 
 The package was created with Cookiecutter_ and this_ template.
+
 .. _`nidaqmx`: https://nidaqmx-python.readthedocs.io/en/latest/
 .. _`Portugues lab`: http://www.portugueslab.com
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter

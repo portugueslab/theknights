@@ -10,7 +10,7 @@
 .. image:: https://upload.wikimedia.org/wikipedia/en/e/eb/Knightni.jpg?download
 
 
-The Kinghts (who say NI)
+The Knights (who say NI)
 ========================
 
 This package fakes parts of the `nidaqmx`_ package for controlling NI boards. It should be used like:

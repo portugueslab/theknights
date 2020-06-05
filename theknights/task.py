@@ -39,7 +39,7 @@ class Task(object):
     def __eq__(self, other):
         return False
 
-    def __exit__(self):
+    def __exit__(self, type, value, traceback):
         self.close()
 
     def __hash__(self):

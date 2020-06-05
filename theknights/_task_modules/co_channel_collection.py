@@ -7,6 +7,6 @@ class COChannelCollection(object):
         self._handle = 0
         self._task = 0
 
-    def add_do_voltage_chan(self, name="", line_grouping=None):
+    def add_co_chan(self, name="", line_grouping=None):
         self.name_chs.append(name)
         self.line_groupings.append(line_grouping)

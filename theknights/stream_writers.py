@@ -12,7 +12,7 @@ class ChannelWriterBase(object):
         self._auto_start = auto_start
 
 
-class AnalogSingleChannelWriter(ChannelWriterBase):
+class AnalogMultiChannelWriter(ChannelWriterBase):
 
     def write_many_sample(self, data, timeout=10.0):
 

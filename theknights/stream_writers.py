@@ -1,3 +1,5 @@
+import numpy as np
+from time import sleep
 
 class ChannelWriterBase(object):
     """
@@ -14,6 +16,8 @@ class ChannelWriterBase(object):
 
 class AnalogMultiChannelWriter(ChannelWriterBase):
 
-    def write_many_sample(self, data, timeout=10.0):
+    def write_many_sample(self, buffer, timeout=10.0):
+        sleep(1)
+        data_in = np.random.rand(buffer.shape[1])
+        buffer[0, :] = data_in
 
-        return data.shape[0]

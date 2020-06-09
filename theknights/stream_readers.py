@@ -17,4 +17,4 @@ class AnalogMultiChannelReader(ChannelReaderBase):
         sleep(1)
         data_in = np.random.rand(number_of_samples_per_channel)
         buffer[0, :] = data_in
-        return buffer
+

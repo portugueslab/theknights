@@ -1,3 +1,6 @@
+import numpy as np
+from time import sleep
+
 class ChannelReaderBase(object):
 
     def __init__(self, task_in_stream):
@@ -10,6 +13,8 @@ class ChannelReaderBase(object):
 
 class AnalogMultiChannelReader(ChannelReaderBase):
 
-    def read_many_sample(self, data, number_of_samples_per_channel=1, timeout=10.0):
-
-        return data.shape[0]
+    def read_many_sample(self, buffer, number_of_samples_per_channel=1, timeout=10.0):
+        sleep(1)
+        data_in = np.random.rand(number_of_samples_per_channel)
+        buffer[0, :] = data_in
+        return buffer

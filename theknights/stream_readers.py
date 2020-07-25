@@ -18,3 +18,10 @@ class AnalogMultiChannelReader(ChannelReaderBase):
         data_in = np.random.rand(number_of_samples_per_channel)
         buffer[0, :] = data_in
 
+class AnalogSingleChannelReader(ChannelReaderBase):
+
+    def read_many_sample(self, buffer, number_of_samples_per_channel=1, timeout=10.0):
+        sleep(1)
+        data_in = np.random.rand(number_of_samples_per_channel)
+        buffer[:] = data_in
+
